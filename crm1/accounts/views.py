@@ -58,7 +58,7 @@ def logoutUser(request):
 
 
 @login_required(login_url='login')
-@admin_only
+
 def home(request):
     orders = Order.objects.all()
     customers = Customer.objects.all()
